@@ -1,0 +1,110 @@
+* {
+  font-family: Georgia;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+#header {
+  grid-area: A;
+  margin: 0px 20px 20px 20px;
+  border-bottom: 1px solid currentColor;
+  border-bottom-color: rgb(179, 119, 0);
+}
+
+.cvHeading {
+  text-align: center;
+  font-family: georgia;
+  font-style: italic;
+  font-weight: lighter;
+  font-size: 50px;
+}
+body {
+  display: grid;
+  grid-template:
+    "A A A A"
+    "B C C C"
+    "D D E E"
+    "F F F F";
+  font-family: Georgia;
+  border-left: 40px solid currentColor;
+  border-left-color: rgb(204, 170, 102);
+  border-right: 40px solid currentColor;
+  border-right-color: rgb(204, 170, 102);
+  background-color: rgb(255, 229, 179);
+}
+
+#Image {
+  grid-area: B;
+  height: 100%;
+  margin-bottom: 20px;
+  margin: 0px 0px 20px 20px;
+  border-bottom: 1px solid currentColor;
+  border-bottom-color: rgb(179, 119, 0);
+}
+
+#ImageParagraf {
+  grid-area: C;
+  height: 100%;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  border-bottom: 1px solid currentColor;
+  border-bottom-color: rgb(179, 119, 0);
+}
+p {
+  font-size: 20px;
+}
+
+h2 {
+  text-align: center;
+  padding: 2%;
+}
+ul {
+  line-height: 30px;
+}
+#Movies {
+  grid-area: D;
+  padding-left: 20px;
+  margin: 2%;
+}
+#Awards {
+  grid-area: E;
+  padding-left: 20px;
+  margin: 2%;
+}
+
+.footer {
+  grid-area: F;
+  margin: 2% 2% 0% 2%;
+  padding-top: 10px;
+  text-align: center;
+  border-top: 1px solid currentColor;
+  border-top-color: rgb(179, 119, 0);
+}
+@media (max-width: 1200px) {
+  body {
+    border-left: 0;
+    border-right: 0;
+  }
+}
+
+@media (max-width: 800px) {
+  body {
+    display: block;
+  }
+  header {
+    display: block;
+    height: 100px;
+  }
+  #Image {
+    border: 0px;
+    text-align: center;
+  }
+  
+  p {
+    padding: 10px;
+  }
+  #ImageParagraf {
+    margin: 0% 2% 2% 2%;
+  }
+}
